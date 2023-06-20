@@ -1,0 +1,82 @@
+/* main style */
+:root {
+  --main-bg: #dbeeff;
+  --fieldset-bg: #eeeeee;
+
+  --main-clr: #111;
+  --submit-clr: #00a000;
+  --border-clr: #696969;
+
+  --form-shadow: 2px 2px 8px 1px lightgray;
+  --inputs-border: 2px solid darkgray;
+}
+
+body {
+  font-family: verdana, sans-serif;
+  background-color: var(--main-bg);
+  color: var(--main-clr);
+  margin-top: 25px;
+}
+
+/* form style */
+form {
+  display: block;
+  margin: auto;
+  width: 350px;
+}
+
+fieldset {
+  padding: 25px;
+  background-color: var(--fieldset-bg);
+  border: none;
+  box-shadow: var(--form-shadow);
+}
+
+legend {
+  background-color: gray;
+  padding: 8px;
+  color: white;
+}
+
+input {
+  display: block;
+  width: 90%;
+  margin: 12px auto;
+  padding: 12px;
+  font-size: 18px;
+  font-family: verdana, sans-serif;
+  border: var(--inputs-border);
+  background-color: var(--fieldset-bg);
+  transition: 0.18s;
+}
+
+input:hover, input:focus {
+  outline: none;
+  border-color: var(--border-clr);
+  background-color: white;
+}
+
+button {
+  display: block;
+  margin-left: auto;
+  padding: 8px;
+  font-family: verdana, sans-serif;
+  font-size: 16px;
+  cursor: pointer;
+  border: var(--inputs-border);
+  transition: 0.16s;
+}
+
+button:hover {
+  border-color: var(--border-clr);
+  background-color: #00a000;
+  color: white;
+  border-color: #00a000;
+  box-shadow: var(--form-shadow);
+}
+
+button:active {
+  background-color: green;
+  border-color: green;
+  transition: none;
+}
