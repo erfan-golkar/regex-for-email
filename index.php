@@ -10,7 +10,7 @@
   <form action="index.php" method="post">
     <fieldset>
       <legend>regEx for Email</legend>
-      <input name="email" type="email" placeholder="Your Email">
+      <input name="email" type="text" placeholder="Your Email">
       <button type="submit">Submit</button>
     </fieldset>
   </form>
